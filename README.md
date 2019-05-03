@@ -32,9 +32,10 @@ RangeError: Maximum call stack size exceeded
     at inferFromSignatures (/Users/nodkz/www/_sandbox/tsc-problem/node_modules/typescript/lib/tsc.js:37595:21)
 ```
 
-## This repo has simplified code, more complex test can be in 2 lines:
+## This repo has simplified code, more complex test can be in 3 lines:
 
 ```js
 import { ObjectTypeComposer } from 'graphql-compose';
+declare const User: ObjectTypeComposer<any, any>;
 User.addResolver({ type: User });
 ```
